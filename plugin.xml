@@ -17,7 +17,6 @@
         <clobbers target="amazonAdsPlugin" />
     </js-module>
     
-    <asset src="amazonAdsPlugin.js" target="amazonAdsPlugin.js" />
  
     <!-- android -->
     <platform name="android">
