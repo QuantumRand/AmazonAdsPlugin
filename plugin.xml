@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.quantumrand.PhoneGapPlugins.AmazonAds"
+      version="0.1.0">
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <name>AmazonAdsPlugin</name>
+    <description>PhoneGap Amazon Ads Plugin</description>
+    <author>QuantumRand</author>
+    <license>MIT</license>
+    <keywords>phonegap,amazon,ads</keywords>
+ 
+ 
+    <js-module src="amazonAdsPlugin.js" name="AmazonAdsPlugin">
+        <clobbers target="amazonAdsPlugin" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AmazonAdsPlugins">
+                <param name="android-package" value="com.quantumrand.PhoneGapPlugins.AmazonAds"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/AmazonAdsPlugin.java" target-dir="src/com/quantumrand/amazonAdsPlugin" />
+     </platform>          
+</plugin>
