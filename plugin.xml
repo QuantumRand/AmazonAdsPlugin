@@ -22,7 +22,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AmazonAdsPlugins">
-                <param name="android-package" value="com.quantumrand.amazonAdsPlugin"/>
+                <param name="android-package" value="com.quantumrand.amazonAdsPlugin.AmazonAdsPlugin"/>
             </feature>
         </config-file>
  
