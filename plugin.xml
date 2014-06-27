@@ -25,7 +25,11 @@
                 <param name="android-package" value="com.quantumrand.amazonAdsPlugin.AmazonAdsPlugin"/>
             </feature>
         </config-file>
- 
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+             <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        </config-file>
+         
         <source-file src="src/AmazonAdsPlugin.java" target-dir="src/com/quantumrand/amazonAdsPlugin" />
      </platform>          
 </plugin>
