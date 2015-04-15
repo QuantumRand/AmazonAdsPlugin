@@ -11,6 +11,18 @@ var amazonAdsPlugin = {
                 "debug": debug
             }]
         ); 
+     },
+     displayInterstitial: function(appKey, debug, successCallback, errorCallback) {
+        cordova.exec(
+            successCallback, // success callback function
+            errorCallback, // error callback function
+            'AmazonAdsPlugin', // mapped to our native Java class called "AmazonAdsPlugin"
+            'displayAmazonInterstitial', // with this action name
+            [{                  // and this array of custom arguments to create our entry
+                "appKey": appKey,
+                "debug": debug
+            }]
+        ); 
      }
 }
 module.exports = amazonAdsPlugin;
