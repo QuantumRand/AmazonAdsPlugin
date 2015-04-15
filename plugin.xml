@@ -21,7 +21,7 @@
     <platform name="android">
 
         <source-file src="src/android/src/com/quantumrand/AmazonAdsPlugin.java" target-dir="src/com/quantumrand/amazonAdsPlugin" />
-        <source-file src="src/android/libs/amazon-ads-5.3.22.jar" target-dir="libs" />
+        <source-file src="src/android/libs/amazon-ads-5.5.102.jar" target-dir="libs" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AmazonAdsPlugin">
