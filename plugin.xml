@@ -30,6 +30,7 @@
              <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
         </config-file>
          
+        <source-file src="src/android/libs/amazon-ads-5.5.102.jar" target-dir="libs" />
         <source-file src="src/AmazonAdsPlugin.java" target-dir="src/com/quantumrand/amazonAdsPlugin" />
      </platform>          
 </plugin>
