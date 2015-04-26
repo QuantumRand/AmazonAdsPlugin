@@ -1,9 +1,7 @@
 AmazonAdsPlugin
 ===============
 
-A PhoneGap Plugin for the Amazon Ads SDK
-
-Requires the amazon-ads library from the Android Amazon SDK be added to your PhoneGap project.
+A PhoneGap Plugin for the Amazon Ads SDK supporting basic Banner and Interstitial ads.
 
 Installation
 ------------
