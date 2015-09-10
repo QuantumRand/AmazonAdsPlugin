@@ -33,5 +33,25 @@
              <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
         </config-file>
          
-     </platform>          
+     </platform>
+     
+     
+    <!-- fireos -->
+    <platform name="amazon-fireos">
+
+        <source-file src="src/amazon/src/com/quantumrand/AmazonAdsPlugin.java" target-dir="src/com/quantumrand/amazonAdsPlugin" />
+        <source-file src="src/android/libs/amazon-ads-5.5.102.jar" target-dir="libs" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AmazonAdsPlugin">
+                <param name="android-package" value="com.quantumrand.amazonAdsPlugin.AmazonAdsPlugin"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+             <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        </config-file>
+         
+     </platform>
+    
 </plugin>
