@@ -119,7 +119,7 @@ public class AmazonAdsPlugin extends CordovaPlugin{
 		        if (adView.getParent() != null) {							//check for existing ad
 		            ((ViewGroup)adView.getParent()).removeView(adView); 
 		        }
-		        ViewGroup parentView = ((ViewGroup) webView).getParent();
+		        ViewGroup parentView = (ViewGroup)((ViewGroup) webView).getParent();
 		        if (isOnTop) {
 		        	if (parentView.getChildCount() >= 2)
 		        		parentView.removeViewAt(0);
